@@ -1,19 +1,17 @@
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 
-const ExploreScreen = () => {
+const DetailsScreen = ({navigation}) => {
     return (
       <View style={styles.container}>
-        <Text>ExploreScreen</Text>
-        <Button
-          title="Click Here"
-          onPress={() => alert('Button Clicked!')}
-        />
+        <Text>PDMA Early Warnings</Text>
+    
+       
       </View>
     );
 };
 
-export default ExploreScreen;
+export default DetailsScreen;
 
 const styles = StyleSheet.create({
   container: {

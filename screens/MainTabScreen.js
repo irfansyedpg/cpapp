@@ -3,9 +3,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import * as React from 'react';
 import HomeScreen from './HomeScreen'
-import DetailScreen from './DetailsScreen'
-import ProfileScreen from './ProfileScreen'
-import ExploreScreen from './ExploreScreen'
+import EarlyWarning from './EarlyWarning'
+import DailySituation from './DailySituation'
+import AssesmentResult from './AssesmentResult'
 import Icon from 'react-native-vector-icons/Ionicons'
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -20,7 +20,7 @@ const MainTabScreen = () => (
 
     <Tab.Navigator
         initialRouteName="HomeScreen"
-        activeColor="#fff"
+        activeColor="black"
         style={{ backgroundColor: 'tomato' }}
     >
         <Tab.Screen
@@ -28,42 +28,45 @@ const MainTabScreen = () => (
             component={HomeStackScreen}
             options={{
                 tabBarLabel: 'Home',
-                tabBarColor:'#009387',
+                tabBarColor:'white',
+               
+                
                 tabBarIcon: ({ color }) => (
-                    <MaterialCommunityIcons name="home" color={color} size={26} />
+                 
+                    <MaterialCommunityIcons name="home" color={"#aeaeae"}  size={26} />
                 ),
             }}
         />
         <Tab.Screen
-            name="DetailScreen"
+            name="EarlyWarning"
             component={DetailsStackScreen}
             options={{
-                tabBarLabel: 'Disaster Profile',
-                tabBarColor:'#009387',
+                tabBarLabel: 'Early Warnings',
+                tabBarColor:'white',
                 tabBarIcon: ({ color }) => (
-                    <MaterialCommunityIcons name="bell" color={color} size={26} />
+                    <MaterialCommunityIcons name="bell" color={"#aeaeae"} size={26} />
                 ),
             }}
         />
         <Tab.Screen
             name="Profile"
-            component={ProfileScreen}
+            component={DailySituation}
             options={{
-                tabBarLabel: 'Disaster News',
-                tabBarColor:'#009387',
+                tabBarLabel: 'Daily Situation',
+                tabBarColor:'white',
                 tabBarIcon: ({ color }) => (
-                    <MaterialCommunityIcons name="account" color={color} size={26} />
+                    <MaterialCommunityIcons name="newspaper" color={"#aeaeae"} size={26} />
                 ),
             }}
         />
              <Tab.Screen
-            name="Explore"
-            component={ExploreScreen}
+            name="Assessment Results"
+            component={AssesmentResult}
             options={{
-                tabBarLabel: 'Early Warning',
-                tabBarColor:'#009387',
+                tabBarLabel: 'Assessment Result',
+                tabBarColor:'white',
                 tabBarIcon: ({ color }) => (
-                    <MaterialCommunityIcons name="account" color={color} size={26} />
+                    <MaterialCommunityIcons name="chart-pie" color={"#aeaeae"} size={26} />
                 ),
             }}
         />
@@ -121,7 +124,7 @@ const DetailsStackScreen = ({ navigation }) => (
         }
 
     >
-        <DetailsStack.Screen name="Details" component={DetailScreen}
+        <DetailsStack.Screen name="Details" component={EarlyWarning}
 
             options={{
 

@@ -33,7 +33,7 @@ export function DrawerContent(props) {
                         <View style={{ flexDirection: 'row', marginTop: 15 }}>
                             <Avatar.Image
                                 source={{
-                                    uri: 'https://api.adorable.io/avatars/50/abott@adorable.png'
+                                    uri: "../assests/irfan.jpeg"
                                 }}
                                 size={50}
                             />
@@ -49,103 +49,27 @@ export function DrawerContent(props) {
                     </View>
 
 
-                    <Drawer.Section title="Assessment">
+                    
 
 
+
+
+                    <Drawer.Section style={styles.drawerSection} title=".">
                         <DrawerItem
                             icon={({ color, size }) => (
                                 <Icon
-                                    name="home-outline"
+                                    name="account-group"
                                     color={color}
                                     size={size}
                                 />
                             )}
-                            label="Report A Disaster"
-                            onPress={() => { props.navigation.navigate('Home') }}
-                        />
-
-                        <DrawerItem
-                            icon={({ color, size }) => (
-                                <Icon
-                                    name="account-outline"
-                                    color={color}
-                                    size={size}
-                                />
-                            )}
-                            label="Rapid Need Assessment"
-                            onPress={() => { props.navigation.navigate('Profile') }}
-                        />
-
-                        <DrawerItem
-                            icon={({ color, size }) => (
-                                <Icon
-                                    name="bookmark-outline"
-                                    color={color}
-                                    size={size}
-                                />
-                            )}
-                            label="Damage Need Assessment"
-                            onPress={() => { props.navigation.navigate('BookmarkScreen') }}
-                        />
-
-                        <DrawerItem
-                            icon={({ color, size }) => (
-                                <Icon
-                                    name="account-check-outline"
-                                    color={color}
-                                    size={size}
-                                />
-                            )}
-                            label="Risk Assessment Results"
-                            onPress={() => { props.navigation.navigate('SupportScreen') }}
-                        />
-                    </Drawer.Section>
-
-
-                    <Drawer.Section title="MIRA">
-
-
-                        <DrawerItem
-                            icon={({ color, size }) => (
-                                <Icon
-                                    name="home-outline"
-                                    color={color}
-                                    size={size}
-                                />
-                            )}
-                            label="Tool1"
-                            onPress={() => { props.navigation.navigate('Home') }}
-                        />
-
-                        <DrawerItem
-                            icon={({ color, size }) => (
-                                <Icon
-                                    name="account-outline"
-                                    color={color}
-                                    size={size}
-                                />
-                            )}
-                            label="Tool2"
-                            onPress={() => { props.navigation.navigate('Profile') }}
-                        />
-                    </Drawer.Section>
-
-                    <Drawer.Section style={styles.drawerSection} title="Genral">
-                        <DrawerItem
-                            icon={({ color, size }) => (
-                                <Icon
-                                    name="settings-outline"
-                                    color={color}
-                                    size={size}
-                                />
-                            )}
-                            label="Nearby Evacuation Centre"
+                            label="Community Outreach"
                             onPress={() => { props.navigation.navigate('SettingsScreen') }}
                         />
                         <DrawerItem
                             icon={({ color, size }) => (
                                 <Icon
-                                    name="account-check-outline"
+                                    name="axis-arrow"
                                     color={color}
                                     size={size}
                                 />
@@ -159,28 +83,58 @@ export function DrawerContent(props) {
                         <DrawerItem
                             icon={({ color, size }) => (
                                 <Icon
-                                    name="account-check-outline"
+                                    name="barn"
                                     color={color}
                                     size={size}
                                 />
                             )}
-                            label="Community Outreach"
+                            label="Near Evacuation Center"
                             onPress={() => { props.navigation.navigate('SupportScreen') }}
                         />
 
                         <DrawerItem
                             icon={({ color, size }) => (
                                 <Icon
-                                    name="account-check-outline"
+                                    name="alarm-light"
                                     color={color}
                                     size={size}
                                 />
                             )}
-                            label="Emergency Contacts "
+                            label="Emergency Contacts"
                             onPress={() => { props.navigation.navigate('SupportScreen') }}
                         />
 
                     </Drawer.Section>
+
+
+                    <Drawer.Section title="MIRA ASSESSMENTS">
+
+
+                        <DrawerItem
+                            icon={({ color, size }) => (
+                                <Icon
+                                    name="tooltip-edit"
+                                    color={color}
+                                    size={size}
+                                />
+                            )}
+                            label="Tool1"
+                            onPress={() => { props.navigation.navigate('Home') }}
+                        />
+
+                        <DrawerItem
+                            icon={({ color, size }) => (
+                                <Icon
+                                    name="tooltip-edit-outline"
+                                    color={color}
+                                    size={size}
+                                />
+                            )}
+                            label="Tool2"
+                            onPress={() => { props.navigation.navigate('Profile') }}
+                        />
+                    </Drawer.Section>
+
                     <Drawer.Section style={styles.drawerSection} title="Settings">
                         <DrawerItem
                             icon={({ color, size }) => (
@@ -197,12 +151,12 @@ export function DrawerContent(props) {
                         <DrawerItem
                             icon={({ color, size }) => (
                                 <Icon
-                                    name="account-check-outline"
+                                    name="image-filter-center-focus-weak"
                                     color={color}
                                     size={size}
                                 />
                             )}
-                            label="Settings "
+                            label="Settings"
                             onPress={() => { props.navigation.navigate('SupportScreen') }}
                         />
                     </Drawer.Section>
