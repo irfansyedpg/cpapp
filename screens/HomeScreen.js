@@ -15,6 +15,17 @@ const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
 
+
+
+
+
+
+
+
+
+
+      
+
       {/* Card Weather Starts */}
       <View style={styles.crWeather}>
         <View style={{ flex: 60, justifyContent: "center", alignContent: 'center', padding: 20 }}>
